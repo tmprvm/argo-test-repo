@@ -20,7 +20,7 @@ spec:
         - name: service.type
           value: NodePort
         - name: service.ports.http
-          value: '8080'
+          value: '80'
   
   destination:
     server: https://kubernetes.default.svc
