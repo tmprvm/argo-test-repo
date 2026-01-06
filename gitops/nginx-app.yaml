@@ -19,7 +19,7 @@ spec:
       parameters:
         - name: service.type
           value: NodePort
-        - name: service.port
+        - name: service.ports.http
           value: "8080"
   
   destination:
