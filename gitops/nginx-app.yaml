@@ -16,10 +16,6 @@ spec:
     
     # Helm values из ТОГО ЖЕ репозитория
     helm:
-      valueFiles:
-        - values/nginx/values.yaml  # Относительный путь в репозитории
-      
-      # Дополнительные параметры
       parameters:
         - name: service.type
           value: NodePort
