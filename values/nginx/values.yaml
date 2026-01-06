@@ -1,0 +1,20 @@
+# Bitnami nginx chart имеет специфичную структуру
+
+# 1. Меняем HTTP порт
+service:
+  ports:
+    http: 80        # Внешний порт 8080 вместо 80
+    https: 443       # HTTPS порт 8443 вместо 443
+  
+  # Или NodePort для локального доступа
+  nodePorts:
+    http: 31080       # NodePort для HTTP
+    https: 31443      # NodePort для HTTPS
+  
+  type: NodePort      # Меняем тип сервиса
+
+# 2. Контейнерные порты (опционально)
+containerPorts:
+  http: 8080
+  https: 8443
+
