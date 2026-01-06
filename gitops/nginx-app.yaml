@@ -12,6 +12,7 @@ spec:
     # Удалённый Helm chart
     chart: nginx
     repoURL: https://charts.bitnami.com/bitnami  # Chart источник
+    targetRevision: 15.2.1
     
     # Helm values из ТОГО ЖЕ репозитория
     helm:
